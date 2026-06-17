@@ -133,7 +133,7 @@ public class DnsBlockListQueryHelper {
             this.queryTerm = queryTerm;
         }
 
-        @SuppressWarnings("unused")
+        @SuppressWarnings({"unused", "UnusedReturnValue"})
         public DnsBlockListQueryHelper.BuilderConf addAllBlockLists(List<DnsBlockList> blockLists) {
             for (DnsBlockList blockList : blockLists) {
                 this.blockLists.addAll(blockLists);
@@ -141,7 +141,7 @@ public class DnsBlockListQueryHelper {
             return this;
         }
 
-        @SuppressWarnings("unused")
+        @SuppressWarnings({"unused", "UnusedReturnValue"})
         public DnsBlockListQueryHelper.BuilderConf addBlockList(DnsBlockList blockList) {
             addAllBlockLists(Collections.singletonList(blockList));
             return this;
